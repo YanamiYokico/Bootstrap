@@ -1,0 +1,173 @@
+@media(max-width:998px){
+    .image-pic{
+        padding-top:125px;
+        width:1000x;
+        height:500px;
+    }
+}
+
+@media(max-width:770px){
+    .benefits__wrapper{
+        margin-top:60px;
+    }
+    .image-pic{
+        display:none;
+    }
+    .about-us__img{
+        display:none;
+    }
+    .header__list{
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    .header__wrapper{
+        flex-direction: column;
+    }
+    .header__logo{
+        margin-top:30px;
+    }
+    .benefits__inf{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .benefits__container-desc{
+        max-width: 210px;
+    }
+    .teachers__img{
+        width:100%;
+    }
+}
+@media(max-width:548px){
+    .benefits__container{
+        flex-direction: column;
+        min-height:280px;
+    }
+    .benefits__container-desc {
+        max-width: 210px; 
+    }
+    .benefits__inf{
+        flex-direction:row;
+    }
+    .benefits__img{
+        display:none;
+    }
+    .about-us__title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 100%;
+    }
+    .benefits__title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .header__wrapper{
+        flex-direction: row;
+    }
+    /* Burger menu start */
+
+    .menu-btn {
+        display:block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+    }
+    
+    .menu-btn span {
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        width:100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:white;
+        transition: all 0.5s;
+    }
+    
+    .menu-btn span:nth-of-type(2) {
+        top: 90%;
+    }
+    .menu-btn span:nth-of-type(3) {
+        top:10%;
+    }
+
+    .menu {
+        display:block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        padding: 15px;
+        transform: translateX(-100%);
+        background-color: purple;
+        transition: transform 0.5s; 
+    }
+    .header__wrapper{
+        align-items: center;
+    }
+    .header__logo{
+        margin-top:0;
+    }
+    .header__list{
+        flex-direction: column;
+    }
+    
+    .menu.active {
+        transform: translateX(0);
+    }
+    
+    .menu li {
+        list-style-type: none;
+    }
+    
+    .menu-btn.active span:first-of-type {
+        transform: translateX(100%);
+    }
+    
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    
+        /* Burger menu end */
+}
+
+@media(max-width:398px){
+    .about-us__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+    }
+}
+
+@media(max-width:472px){
+    .about-us__button{
+        margin-bottom:50px;
+    }
+    .teachers__title-top{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .teachers__title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .teachers__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+
+    
+}
